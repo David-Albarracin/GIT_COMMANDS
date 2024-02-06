@@ -4,7 +4,7 @@
 
 Documentación para recordar comandos útiles al momento de crear nuevos repositorios y configurar el entorno de git en nuevos equipos para trabajar en un entorno, Primero configuramos las variables globales iniciando credenciales
 
-* **git config --global user.name "David-Albarracin:" **  Se usa para agregar el nombre de usuario 
+* **git config --global user.name "David-Albarracin:"** Se usa para agregar el nombre de usuario 
 * **git config --global user.email "90213684+David-Albarracin@users.noreply.github.com:"**  Se usa para agregar el correo electrónico
 * **git config --global --replace-all core.editor "code --wait":"** Se usa para remplasar todos los editores de git y dejar por defecto el vscode la forma corta del comando es git config --global core.editor "code --wait"
 * **git config --global init.defaultBranch main:** Se usa para usar la rama principal como main y evitar la rama master ya que esta descontinuada 
@@ -156,11 +156,10 @@ Ahora para practicar algunos comandos vamos a realizar un Taller para ello vamos
    + **Solucion:** Comando Implementado git log --graph --abbrev-commit --decorate --format=format:'%C(bold yellow)%h%C(reset)%C(bold red)\ %d\ %C(reset) %C(white)%s%C(reset)%C(blue)\ [%an]%C(reset)' --all
 
      ```
-     git config --global alias.lsFinal "log --graph --abbrev-commit --decorate --format=format:'%C(bold yellow)%h%C(reset)%C(bold red)\ %d\ %C(reset) %C(white)%s%C(reset)%C(blue)\ [%an]%C(reset)' --all"
+     git config --global alias.lsFinal "log --graph --abbrev-commit --decorate --format=format:'%C(bold yellow)%h%C(reset)%C(red)%d\%C(reset) %C(white)%s%C(reset)%C(blue)\ [%an]%C(reset)' --all"
      ```
 
      
-
 ### Prueba de Verificación :
 
 Prueba ahora  todas las soluciones e implementa estos alias para tener un desarrollo mas ágil en tus proyectos copia y pega esto en tu git bash y presiona enter (Recuerda ubicarte en una carpeta que tenga el git inicializado)
@@ -175,7 +174,7 @@ git config --global alias.last "log -1 HEAD"
 
 git config --global alias.ec "config --global -e"
 
-git config --global alias.lsFinal "log --graph --abbrev-commit --decorate --format=format:'%C(bold yellow)%h%C(reset)%C(bold red)\ %d\ %C(reset) %C(white)%s%C(reset)%C(blue)\ [%an]%C(reset)' --all"
+git config --global alias.lsFinal "log --graph --abbrev-commit --decorate --format=format:'%C(bold yellow)%h%C(reset)%C(red)%d\%C(reset) %C(white)%s%C(reset)%C(blue)\ [%an]%C(reset)' --all"
 
 git ls5
 git lsG5
