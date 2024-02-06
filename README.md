@@ -39,20 +39,20 @@ blue)%h%C(reset) - %C(bold green) (%ar)%C(reset)%C(white)%s%C(reset)%C(dim
 white)-%an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 ```
 
-* **git config --global: **Este Comando Se utiliza para configurar opciones de git. La opcion (--global) indica que el cambio se aplicara a nivel global, es decir, para todos los repositorios
-* **alias.lg: **Establece un alias llamado "lg" en la configuracion del git
+* **git config --global:** Este Comando Se utiliza para configurar opciones de git. La opcion (--global) indica que el cambio se aplicara a nivel global, es decir, para todos los repositorios
+* **alias.lg:** Establece un alias llamado "lg" en la configuracion del git
 * **log --graph --abbrev-commit --decorate --format=format:'%C(bold
   blue)%h%C(reset) - %C(bold green) (%ar)%C(reset)%C(white)%s%C(reset)%C(dim
-  white)-%an%C(reset)%C(bold yellow)%d%C(reset)' --all: "**El comando el cial se ejecuta cuando se hace referencia al comando git lg aqui esta el desglose de formato utilizado en el comando
-  * **--graph: **Muestra una presentacion grafica del historial de commits con lineas que indican bifurcaciones y funsiones
-  * **--abbrev-commit: **Muestra el hash del commit abreviado 
-  * **--decorate: **Muestra las referencias (ramas o tag) junto a los commits
-  * **--format=format: **Define un formato personalizado para la salida del log. La cadena entre comillas simples ('.....') especifica como formatear cada entrada del log
-  * **%C(bold blue)%h%C(reset): **Muestra el hash abreviado del commit en azul y negrita
-  * **%C(bold green) (%ar)%C(reset): **Muestra la fecha relativa del commit en verde y negrita
-  * **%C(white)%s%C(reset): **Muestra el mensaje del commit en blanco
-  * **%C(dim white)-%an%C(reset): **Muestra el nombre del auto en blanco con una intensidad redusida 
-  * **%C(bold yellow)%d%C(reset): ** Muestra las referencias (ramas o tags) en amarillo y negrita
+  white)-%an%C(reset)%C(bold yellow)%d%C(reset)' --all:"** El comando el cial se ejecuta cuando se hace referencia al comando git lg aqui esta el desglose de formato utilizado en el comando
+  * **--graph:** Muestra una presentacion grafica del historial de commits con lineas que indican bifurcaciones y funsiones
+  * **--abbrev-commit:** Muestra el hash del commit abreviado 
+  * **--decorate:** Muestra las referencias (ramas o tag) junto a los commits
+  * **--format=format:** Define un formato personalizado para la salida del log. La cadena entre comillas simples ('.....') especifica como formatear cada entrada del log
+  * **%C(bold blue)%h%C(reset):** Muestra el hash abreviado del commit en azul y negrita
+  * **%C(bold green) (%ar)%C(reset):** Muestra la fecha relativa del commit en verde y negrita
+  * **%C(white)%s%C(reset):** Muestra el mensaje del commit en blanco
+  * **%C(dim white)-%an%C(reset):** Muestra el nombre del auto en blanco con una intensidad redusida 
+  * **%C(bold yellow)%d%C(reset):** Muestra las referencias (ramas o tags) en amarillo y negrita
 
 
 
@@ -80,13 +80,13 @@ Después de realizar la estructura del proyecto damos inicio al control de versi
 
 Ahora para practicar algunos comandos vamos a realizar un Taller para ello vamos usar algunas opciones del log en este apartado encontraras la información: 
 
-* **--all: **Se usa para hacer referencia a todas las ramas 
-* **--decorate: **Muestra las referencias (ramas o tag) junto a los commits
-* **--oneline: **Muestra todo el decorate en una sola linea 
-* **--graph: **Muestra una presentacion grafica del historial de commits con lineas que indican bifurcaciones y funsiones
-* **--n (numero): **Lista los ultimos n commits 
-* **--format=format: **Define un formato personalizado para la salida del log. La cadena entre comillas simples ('.....') especifica como formatear cada entrada del log
-* **%C(bold blue)%h%C(reset): **Muestra el hash abreviado del commit en azul y negrita
+* **--all:** Se usa para hacer referencia a todas las ramas 
+* **--decorate:** Muestra las referencias (ramas o tag) junto a los commits
+* **--oneline:** Muestra todo el decorate en una sola linea 
+* **--graph:** Muestra una presentacion grafica del historial de commits con lineas que indican bifurcaciones y funsiones
+* **--n (numero):** Lista los ultimos n commits 
+* **--format=format:** Define un formato personalizado para la salida del log. La cadena entre comillas simples ('.....') especifica como formatear cada entrada del log
+* **%C(bold blue)%h%C(reset):** Muestra el hash abreviado del commit en azul y negrita
 
 ### Ejemplos:
 
@@ -118,7 +118,7 @@ Ahora para practicar algunos comandos vamos a realizar un Taller para ello vamos
 
    * Muestra las fechas de los commits de forma relativa
 
-   * **Solucion : **comando implementado (git log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(bold green) (%ar)%C(reset) - %C(white)%s%C(reset) - %C(dim white)-%an%C(reset) - %C(bold yellow)%d%C(reset)' --all)
+   * **Solucion :** comando implementado (git log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(bold green) (%ar)%C(reset) - %C(white)%s%C(reset) - %C(dim white)-%an%C(reset) - %C(bold yellow)%d%C(reset)' --all)
 
      ```
      git config --global alias.lsG5 "log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(bold green) (%ar)%C(reset) - %C(white)%s%C(reset) - %C(dim white)-%an%C(reset) - %C(bold yellow)%d%C(reset)' --all"
