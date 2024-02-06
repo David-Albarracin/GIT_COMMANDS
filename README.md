@@ -183,6 +183,3 @@ git last
 git ec
 git lsFinal
 ```
-
- 
-
